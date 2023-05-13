@@ -195,10 +195,7 @@ export default function Formpage(props) {
                 onChange={Onsearch}
               />
             </div>
-            <Table
-             data={filtereddata} 
-             delete={DeleteItem}
-              edit={EditItem} />
+            <Table data={filtereddata} delete={DeleteItem} edit={EditItem} />
           </div>
         )}
       </div>
