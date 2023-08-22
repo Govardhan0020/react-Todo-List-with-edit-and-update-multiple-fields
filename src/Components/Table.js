@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Table(props) {
+export default function Table( props) {
   const Border = { border: '2px solid black' };
   const dataList = props.data;
   return (
@@ -19,11 +19,11 @@ export default function Table(props) {
               <th style={Border}> DeleteItem </th>
             </thead>
             <tbody>
-              {dataList.map((item) => (
+              {dataList.map(({ id, Fname, Lname , Email }) => (
                 <tr>
-                  <td style={Border}>{item.Fname} </td>
-                  <td style={Border}>{item.Lname} </td>
-                  <td style={Border}>{item.Email} </td>
+                  <td style={Border}>{Fname} </td>
+                  <td style={Border}>{Lname} </td>
+                  <td style={Border}>{Email} </td>
                   <td style={Border}>
                     <button type="edit"
                      onClick={() => props.edit(item.id)}> Edit </button>
