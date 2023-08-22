@@ -64,7 +64,6 @@ export default function Formpage(props) {
         Lname: data.lastname,
         Email: data.email,
       };
-
       setDataList([...dataList, newItem]);
       setData({
         firstname: '',
